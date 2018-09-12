@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #6a6a6a;
+    margin-top: 0;
+    background: #F3F3F3;
+    min-width: 300px;
+}
+
+p {
+    font-size: .95em;
+    padding-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+a {
+    color: #6a6a6a;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.wrap{
+    text-align: center;
+
+}
+
+.main-header,
+.container,
+.main-footer,
+.contact-inf,
+.description-banner,
+.banner-img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-nav li,
+span, .main-footer{
+    font-weight: 800;
+
+}
+
+.main-nav li{
+    margin-top: 2px;
+    background: #FFFFFF;
+
+}
+
+.banner{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-img{
+    width: 80%;
+}
+.title{
+    /*padding-bottom: 20px;*/
+}
+
+.wrap-portfolio{
+    background: #FFFFFF;
+}
+
+.wrap-portfolio,
+.contact-inf{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.feat-img {
+    width: 90%;
+    min-width: 280px;
+}
+
+.footer-line{
+    width: 95%;
+    border: .5px solid #c0c0c0;
+    margin: 0 auto;
+}
+
+.footer-nav{
+    display: none;
+}
+
+.footer-name{
+    float: left;
+}
+
+.to-top{
+    float: right;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* =================================
+  Media Queries - Use a 768px breakpoint for tablet, and 1024px breakpoint for desktop.
+==================================== */
+
+@media (min-width: 768px) {
+
+    nav.main-nav li{
+        display: inline-block;
+    }
+
+    .main-nav li{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 800;
+        background: #F3F3F3;
+    }
+
+    .description-banner{
+        float: left;
+        text-align: left;
+        width: 60%;
+    }
+
+    .banner-img{
+        float: right;
+        width: 40%;
+    }
+
+    .container{
+        display: inline-block;
+        width: 48%;
+        padding-top: 20px;
+    }
+    .feat-img {
+        width: 100%;
+    }
+
+    .footer-nav{
+        padding-top: 15px;
+        display: inline-block;
+        float: right;
+    }
+
+    .footer-nav li{
+        float: left;
+    }
+
+    nav.footer-nav li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .to-top{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .name{
+        float: left;
+    }
+
+    .main-nav{
+        padding-top: 25px;
+        float: right;
+    }
+
+    .container{
+        width: 31%;
+    }
+
+}
