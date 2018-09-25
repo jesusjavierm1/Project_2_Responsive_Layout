@@ -13,8 +13,9 @@ body {
 }
 
 p {
-    font-size: .95em;
+    font-size: 14px;
     padding-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 h1,
@@ -31,10 +32,11 @@ a {
 /* =================================
   Base Layout Styles
 ==================================== */
-
+p{
+  overflow-wrap: break-word;
+}
 .wrap{
     text-align: center;
-
 }
 
 .main-header,
@@ -45,6 +47,10 @@ a {
 .banner-img{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.container{
+  vertical-align: top;
 }
 
 .main-nav li,
@@ -67,9 +73,7 @@ span, .main-footer{
 .banner-img{
     width: 80%;
 }
-.title{
-    /*padding-bottom: 20px;*/
-}
+
 
 .wrap-portfolio{
     background: #FFFFFF;
@@ -116,6 +120,14 @@ span, .main-footer{
 
 @media (min-width: 768px) {
 
+    p.description-banner {
+      font-size: 20px;
+    }
+
+    p{
+      overflow-wrap: break-word;
+    }
+
     nav.main-nav li{
         display: inline-block;
     }
@@ -137,11 +149,14 @@ span, .main-footer{
         float: right;
         width: 40%;
     }
-
+    .container-wrap{
+      min-width: 768px;
+    }
     .container{
         display: inline-block;
-        width: 48%;
+        width: 40%;
         padding-top: 20px;
+        height: 5%;
     }
     .feat-img {
         width: 100%;
@@ -169,6 +184,14 @@ span, .main-footer{
 }
 
 @media (min-width: 1024px) {
+
+  .container-wrap{
+    min-width: 768px;
+  }
+
+  p.description-banner {
+  font-size: 30px;
+  }
 
     .name{
         float: left;
